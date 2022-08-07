@@ -55,7 +55,6 @@ header {
   /* background-color: red; */
 }
 
-
 header h1 {
   font-family: "made-mirage-regular";
   font-weight: 600;
@@ -250,7 +249,7 @@ footer .three {
 }
 
 footer h3,
-footer a {
+footer .three a {
   font-family: "made-mirage-regular";
   font-weight: 400;
 }
