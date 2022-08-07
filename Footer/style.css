@@ -1,0 +1,72 @@
+@font-face {
+  font-family: "made_mirageregular";
+  src: url("made_mirage_regular_personal_use-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  color: #d6d6d6;
+  background-color: #1b1b1b;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul > li {
+  margin: 20px;
+}
+
+footer {
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  margin-top: 80px;
+}
+
+.box {
+  width: 33%;
+}
+
+.one {
+  display: flex;
+  font-family: "Lato", sans-serif;
+}
+
+.one,
+.two {
+  border-right: #d6d6d6 solid 1px;
+}
+
+h3 {
+  font-family: "made_mirageregular";
+  font-weight: normal;
+  font-style: normal;
+}
+
+.one,
+.two,
+.three {
+  padding: 25px;
+}
+
+.top {
+  font-size: 22px;
+  margin-bottom: 50px;
+}
+
+button {
+  margin-top: 50px;
+  padding: 15px;
+  border: #d6d6d6 solid 1px;
+  width: 150px;
+  cursor: pointer;
+}
