@@ -36,6 +36,8 @@ main {
   margin: 81px 68px;
   border-left: 1px solid var(--black);
   border-top: 1px solid var(--black);
+  /* background-color: blue; */
+  overflow: hidden;
 }
 
 .border {
@@ -87,6 +89,8 @@ nav ul {
   align-items: center;
   justify-content: center;
   column-gap: 82px;
+  /* background-color: red; */
+  width: 100%;
 }
 
 nav li {
@@ -115,8 +119,10 @@ nav li:hover::after {
 /* CONTENT */
 
 .content {
+  /* background-color: yellow; */
   display: grid;
-  grid-template-columns: 535px 329px 440px;
+  grid-template-columns: 3.2fr 2fr 0.5fr;
+  /* grid-template-columns: 535px 329px 440px; */
 }
 
 section {
