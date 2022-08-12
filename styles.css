@@ -49,22 +49,24 @@ main {
 
 header {
   height: 173px;
-  display: grid;
-  grid-template-columns: 0.2fr 0.6fr 0.2fr;
-  place-items: center;
+  display: flex;
+  /* grid-template-columns: 0.2fr 0.6fr 0.2fr; */
+  align-items: center;
+  justify-content: center;
+  /* place-items: center; */
   /* background-color: red; */
 }
 
 header h1 {
   font-family: "made-mirage-regular";
-  font-weight: 600;
   font-size: 3rem;
   color: #d23636;
   text-transform: uppercase;
   text-align: center;
+  font-weight: bold;
 }
 
-header svg {
+/* header svg {
   height: 16px;
   width: auto;
   margin-right: 12px;
@@ -78,7 +80,9 @@ header .search {
 
 header .search a {
   margin: auto 4px;
-}
+} */
+
+
 
 /* NAVBAR */
 
@@ -86,8 +90,8 @@ nav ul {
   height: 105px;
   display: flex;
   align-items: center;
-  justify-content: center;
-  column-gap: 82px;
+  justify-content: space-around;
+  /* column-gap: 82px; */
   /* background-color: red; */
   width: 100%;
 }
@@ -97,9 +101,36 @@ nav li {
   font-weight: 500;
   text-transform: uppercase;
   position: relative;
+  /* background-color: blue; */
+}
+nav .signIn{
+  border: 2px solid #d23636;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 25px;
+  border-radius: 4px;
+  transition: .3s ease;
+  
+}
+.signIn a{
+  color: #d23636;
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+.signIn:hover{
+  /* transform: scale(0.97); */
+  transition: .3s ease;
+  border: 2px solid white;
+  background-color:#d23636 ;
+  color: white;
+}
+.signIn:hover a{
+  color: white;
 }
 
-nav li::after {
+nav li:not(:last-child):after {
   content: "";
   position: absolute;
   bottom: -0.5em;
@@ -120,52 +151,41 @@ nav li:hover::after {
 .content {
   /* background-color: yellow; */
   display: grid;
-  grid-template-columns: 3.2fr 2fr 0.5fr;
+  grid-template-columns: 1fr 1fr 1fr;
   /* grid-template-columns: 535px 329px 440px; */
 }
 
 section {
-  padding: 0 56px;
+  padding: 0 40px;
+  padding-top: 70px;
+  /* background-color: red; */
 }
 
 /* 2 artikel yang kecil di tengah */
-section:nth-child(4n) {
+/* section:nth-child(4n) {
   padding: 0 40px;
-}
+} */
 
 /* candi prambanan */
-section:nth-child(6) {
+/* section:nth-child(6) {
   padding-left: 40px;
-}
+} */
 
 /* "ALL NEWS" */
-.content h2 {
-  margin-bottom: 49px;
-  margin-top: 54px;
-  text-transform: uppercase;
-}
-
-section:nth-child(2) h2 {
-  visibility: hidden;
-}
-
-section:nth-child(n + 3) h2 {
-  visibility: hidden;
-  margin: 0 auto;
-}
 
 figure a {
   margin-bottom: 72px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
   row-gap: 18px;
+  /* background-color: yellow; */
 }
 
 /* baris ke-2++ */
-section:nth-child(n + 2) figure {
+/* section:nth-child(n + 2) figure {
   margin-top: 50px;
-}
+} */
 
 .fighead {
   display: flex;
@@ -173,10 +193,13 @@ section:nth-child(n + 2) figure {
   align-items: center;
   font-size: 12px;
   text-transform: uppercase;
+  /* background-color: red; */
+  font-weight: bold;
 }
 
 figure img {
-  height: 100%;
+  /* height: 100%; */
+  width: 100%;
 }
 
 time {
@@ -192,16 +215,6 @@ figcaption {
 figure:hover figcaption {
   text-decoration: underline;
 }
-
-.col-span-2 {
-  grid-column: span 2;
-}
-
-.row-span-2 {
-  grid-row: span 2;
-}
-
-/* FOOTER */
 
 footer ul > li {
   margin: 0 0 20px 20px;
